@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Comedores - Montessori</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+header{
+background:#6d9886;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* MENU */
+nav{
+background:#393e46;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+padding:8px 15px;
+border-radius:5px;
+}
+
+nav a:hover{
+background:#6d9886;
+}
+
+/* CONTENIDO */
+main{
+padding:30px;
+display:flex;
+justify-content:center;
+}
+
+/* TARJETA */
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+width:550px;
+box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+/* TITULO */
+.card h2{
+text-align:center;
+color:#393e46;
+}
+
+/* FORMULARIO */
+label{
+font-weight:bold;
+color:#393e46;
+}
+
+input, select{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:15px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+/* BOTON */
+button{
+width:100%;
+padding:12px;
+background:#6d9886;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#557c6e;
+}
+
+/* TABLA */
+table{
+width:100%;
+margin-top:20px;
+border-collapse:collapse;
+}
+
+table, th, td{
+border:1px solid #ccc;
+}
+
+th{
+background:#6d9886;
+color:white;
+padding:10px;
+}
+
+td{
+padding:10px;
+text-align:center;
+}
+
+/* FOOTER */
+footer{
+background:#6d9886;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Registro de Comedores</h1>
+</header>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="inventario.html">Inventario</a>
+<a href="comedores.html">Comedores</a>
+</nav>
+
+<main>
+
+<div class="card">
+
+<h2>Agregar Nuevo Comedor</h2>
+
+<form>
+
+<label>Nombre del comedor</label>
+<input type="text" placeholder="Ej: Comedor moderno 6 puestos">
+
+<label>Número de puestos</label>
+<select>
+<option>2 puestos</option>
+<option>4 puestos</option>
+<option>6 puestos</option>
+<option>8 puestos</option>
+<option>10 puestos</option>
+</select>
+
+<label>Material</label>
+<input type="text" placeholder="Ej: Madera, Vidrio, Metal">
+
+<label>Color</label>
+<input type="text" placeholder="Ej: Blanco, Negro, Café">
+
+<label>Precio</label>
+<input type="number" placeholder="Ej: 900000">
+
+<label>Cantidad en stock</label>
+<input type="number" placeholder="Ej: 3">
+
+<button type="submit">Guardar Comedor</button>
+
+</form>
+
+<table>
+
+<tr>
+<th>Nombre</th>
+<th>Puestos</th>
+<th>Material</th>
+<th>Color</th>
+<th>Precio</th>
+<th>Stock</th>
+</tr>
+
+<tr>
+<td>Comedor Moderno</td>
+<td>6</td>
+<td>Madera</td>
+<td>Café</td>
+<td>$950000</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>Comedor Minimalista</td>
+<td>4</td>
+<td>Vidrio</td>
+<td>Blanco</td>
+<td>$700000</td>
+<td>2</td>
+</tr>
+
+</table>
+
+</div>
+
+</main>
+
+<footer>
+<p>Sistema de Inventario Montessori</p>
+</footer>
+
+</body>
+</html>

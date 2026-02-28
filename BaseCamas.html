@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Base Camas - Montessori</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+header{
+background:#6d9886;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* MENU */
+nav{
+background:#393e46;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+padding:8px 15px;
+border-radius:5px;
+}
+
+nav a:hover{
+background:#6d9886;
+}
+
+/* CONTENIDO */
+main{
+padding:30px;
+display:flex;
+justify-content:center;
+}
+
+/* TARJETA */
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+width:500px;
+box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+/* TITULO */
+.card h2{
+text-align:center;
+color:#393e46;
+}
+
+/* FORMULARIO */
+label{
+font-weight:bold;
+color:#393e46;
+}
+
+input, select{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:15px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+/* BOTON */
+button{
+width:100%;
+padding:12px;
+background:#6d9886;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#557c6e;
+}
+
+/* TABLA */
+table{
+width:100%;
+margin-top:20px;
+border-collapse:collapse;
+}
+
+table, th, td{
+border:1px solid #ccc;
+}
+
+th{
+background:#6d9886;
+color:white;
+padding:10px;
+}
+
+td{
+padding:10px;
+text-align:center;
+}
+
+/* FOOTER */
+footer{
+background:#6d9886;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Registro de Base Camas</h1>
+</header>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="inventario.html">Inventario</a>
+<a href="basecamas.html">Base Camas</a>
+</nav>
+
+<main>
+
+<div class="card">
+
+<h2>Agregar Nueva Base Cama</h2>
+
+<form>
+
+<label>Nombre de la base cama</label>
+<input type="text" placeholder="Ej: Base Cama Queen">
+
+<label>Tamaño</label>
+<select>
+<option>Individual</option>
+<option>Semi doble</option>
+<option>Doble</option>
+<option>Queen</option>
+<option>King</option>
+</select>
+
+<label>Material</label>
+<input type="text" placeholder="Ej: Madera, Metal">
+
+<label>Precio</label>
+<input type="number" placeholder="Ej: 450000">
+
+<label>Cantidad en stock</label>
+<input type="number" placeholder="Ej: 10">
+
+<button type="submit">Guardar Base Cama</button>
+
+</form>
+
+<table>
+
+<tr>
+<th>Nombre</th>
+<th>Tamaño</th>
+<th>Material</th>
+<th>Precio</th>
+<th>Stock</th>
+</tr>
+
+<tr>
+<td>Base Queen</td>
+<td>Queen</td>
+<td>Madera</td>
+<td>$500000</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>Base Individual</td>
+<td>Individual</td>
+<td>Metal</td>
+<td>$300000</td>
+<td>8</td>
+</tr>
+
+</table>
+
+</div>
+
+</main>
+
+<footer>
+<p>Sistema de Inventario Montessori</p>
+</footer>
+
+</body>
+</html>

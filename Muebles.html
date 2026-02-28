@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Muebles - Montessori</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#f5f7fa;
+}
+
+/* HEADER */
+header{
+background:#6d9886;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* MENU */
+nav{
+background:#393e46;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+padding:8px 15px;
+border-radius:5px;
+}
+
+nav a:hover{
+background:#6d9886;
+}
+
+/* CONTENIDO */
+main{
+padding:30px;
+display:flex;
+justify-content:center;
+}
+
+/* TARJETA */
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+width:500px;
+box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+/* TITULO */
+.card h2{
+text-align:center;
+color:#393e46;
+}
+
+/* FORMULARIO */
+label{
+font-weight:bold;
+color:#393e46;
+}
+
+input, select{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:15px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+/* BOTON */
+button{
+width:100%;
+padding:12px;
+background:#6d9886;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#557c6e;
+}
+
+/* TABLA */
+table{
+width:100%;
+margin-top:20px;
+border-collapse:collapse;
+}
+
+table, th, td{
+border:1px solid #ccc;
+}
+
+th{
+background:#6d9886;
+color:white;
+padding:10px;
+}
+
+td{
+padding:10px;
+text-align:center;
+}
+
+/* FOOTER */
+footer{
+background:#6d9886;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Registro de Muebles</h1>
+</header>
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="inventario.html">Inventario</a>
+<a href="registro.html">Registro de Muebles</a>
+</nav>
+
+<main>
+
+<div class="card">
+
+<h2>Agregar Nuevo Mueble</h2>
+
+<form>
+
+<label>Nombre del mueble</label>
+<input type="text" placeholder="Ej: Sofá moderno">
+
+<label>Gama</label>
+<select>
+<option>Alta</option>
+<option>Media</option>
+<option>Baja</option>
+</select>
+
+<label>Estilo</label>
+<input type="text" placeholder="Ej: Minimalista">
+
+<label>Precio</label>
+<input type="number" placeholder="Ej: 500000">
+
+<button type="submit">Guardar Mueble</button>
+
+</form>
+
+<table>
+
+<tr>
+<th>Nombre</th>
+<th>Gama</th>
+<th>Estilo</th>
+<th>Precio</th>
+</tr>
+
+<tr>
+<td>Sofá</td>
+<td>Alta</td>
+<td>Moderno</td>
+<td>$4000000</td>
+</tr>
+
+<tr>
+<td>Cama</td>
+<td>Media</td>
+<td>Clásico</td>
+<td>$900000</td>
+</tr>
+
+</table>
+
+</div>
+
+</main>
+
+<footer>
+<p>Sistema de Inventario Montessori</p>
+</footer>
+
+</body>
+</html>
